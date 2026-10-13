@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moje projekty - Kryštof Sentenský. Ukázky webových stránek a realizovaných prací.">
+    <title>Moje projekty | Kryštof Sentenský</title>
+    <!-- Oddělené kaskádové styly -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HLAVNÍ NAVIGAČNÍ LIŠTA -->
+    <header class="navbar-wrapper">
+        <nav class="navbar container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-accent">&lt;/&gt;</span> Kryštof Sentenský
+            </a>
+
+            <!-- Čistě CSS mobilní menu (checkbox hack bez JS) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Přepnout menu">
+            <label for="nav-toggle" class="menu-toggle" aria-label="Otevřít menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Odkazy navigace -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Úvod</a></li>
+                <li><a href="projekty.html" class="nav-link active">Moje projekty</a></li>
+                <li><a href="o-mne.html" class="nav-link">O mně</a></li>
+                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HLAVNÍ OBSAH: PROJEKTY -->
+    <main class="main-wrapper page-content">
+        <section class="container">
+            
+            <!-- HORNÍ LIŠTA: Zpět na úvod + Rozbalovací formulář -->
+            <div class="section-topbar">
+                <a href="index.html" class="btn-back">
+                    <span>←</span> Zpět na úvod
+                </a>
+
+                <!-- ČISTĚ CSS INTERAKTIVNÍ ROZBALOVACÍ FORMULÁŘ (BEZ JS) -->
+                <details class="add-project-collapse">
+                    <summary class="btn btn-primary summary-btn">
+                        <span>+</span> Přidat nový projekt
+                    </summary>
+                    
+                    <div class="collapse-form-card">
+                        <div class="collapse-form-header">
+                            <h3>Nový projekt do portfolia</h3>
+                            <p class="collapse-subtitle">Vyplňte údaje o svém projektu. Formulář funguje čistě v HTML a CSS bez nutnosti skriptů.</p>
+                        </div>
+
+                        <form class="project-form" action="#" method="get">
+                            <div class="form-group">
+                                <label for="projectTitle">Název projektu <span class="req">*</span></label>
+                                <input type="text" id="projectTitle" name="title" placeholder="např. E-shop pro knihkupectví" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectDesc">Popis projektu <span class="req">*</span></label>
+                                <textarea id="projectDesc" name="desc" rows="3" placeholder="Popište, oč se jedná, jaké funkce projekt má a co jste se na něm naučil..." required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectTags">Použité technologie / Štítky <span class="req">*</span></label>
+                                <input type="text" id="projectTags" name="tags" placeholder="např. HTML, CSS, Responzivita" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectLink">Odkaz na projekt nebo GitHub (URL)</label>
+                                <input type="url" id="projectLink" name="link" placeholder="https://github.com/..." >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectIcon">Ikona / Emoji projektu</label>
+                                <input type="text" id="projectIcon" name="icon" placeholder="např. ⚽, 🚀, 💻">
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">Uložit projekt</button>
+                            </div>
+                        </form>
+                    </div>
+                </details>
+            </div>
+
+            <!-- HLAVIČKA SEKCE -->
+            <div class="section-header">
+                <h1 class="section-title">Moje <span class="text-gradient">Projekty</span></h1>
+                <p class="section-desc">Kolekce vytvořených projektů. Každý projekt ukazuje konkrétní dovednosti a použité technologie.</p>
+            </div>
+
+            <!-- MŘÍŽKA S KARTAMI PROJEKTŮ -->
+            <div class="projects-grid">
+
+                <!-- PROJEKT 1: Svět fotbalu -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon-badge">⚽</div>
+                    </div>
+                    <h3 class="project-title">Svět fotbalu</h3>
+                    <p class="project-desc">
+                        Informační web o fotbalu, legendárních klubech (Atlético Madrid, Real Madrid) a fotbalových pozicích. Obsahuje responzivní menu s dropdownem a moderní rozvržení.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag-badge">HTML5</span>
+                        <span class="tag-badge">CSS3</span>
+                        <span class="tag-badge">Responzivita</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="../Web-projekt-1/index.html" class="project-link-btn" target="_blank" rel="noopener noreferrer">
+                            <span>Zobrazit projekt</span>
+                            <span>&rarr;</span>
+                        </a>
+                        <span class="project-date">Dokončeno</span>
+                    </div>
+                </article>
+
+                <!-- PROJEKT 2: Osobní portfolio -->
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon-badge">💻</div>
+                    </div>
+                    <h3 class="project-title">Osobní portfolio</h3>
+                    <p class="project-desc">
+                        Čisté, rychlé a responzivní webové portfolio v tmavém stylu bez zbytečných skriptů. Využívá samostatné oddělené styly a čistou architekturu stránek.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag-badge">HTML5</span>
+                        <span class="tag-badge">CSS3</span>
+                        <span class="tag-badge">Dark Mode</span>
+                    </div>
+                    <div class="project-footer">
+                        <a href="index.html" class="project-link-btn">
+                            <span>Prohlédnout web</span>
+                            <span>&rarr;</span>
+                        </a>
+                        <span class="project-date">Aktuální</span>
+                    </div>
+                </article>
+
+                <!-- PROJEKT 3: Připravený slot pro další projekt -->
+                <article class="project-card project-card-upcoming">
+                    <div class="project-card-header">
+                        <div class="project-icon-badge">🚀</div>
+                    </div>
+                    <h3 class="project-title">Připravovaný projekt</h3>
+                    <p class="project-desc">
+                        Zde bude další realizovaný projekt. Stačí využít formulář výše nebo přidat novou kartu přímo do kódu této stránky.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag-badge">HTML5</span>
+                        <span class="tag-badge">CSS3</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-link-btn disabled">
+                            <span>Již brzy</span>
+                        </span>
+                        <span class="project-date">Ve vývoji</span>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- PATIČKA -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Kryštof Sentenský. Všechna práva vyhrazena.</p>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Úvod</a>
+                <span>•</span>
+                <a href="projekty.html" class="footer-link">Projekty</a>
+                <span>•</span>
+                <a href="o-mne.html" class="footer-link">O mně</a>
+                <span>•</span>
+                <a href="kontakt.html" class="footer-link">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

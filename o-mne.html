@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O mně - Kryštof Sentenský. Informace o dovednostech, zkušenostech a zájmu o tvorbu webových stránek.">
+    <title>O mně | Kryštof Sentenský</title>
+    <!-- Oddělené kaskádové styly -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HLAVNÍ NAVIGAČNÍ LIŠTA -->
+    <header class="navbar-wrapper">
+        <nav class="navbar container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-accent">&lt;/&gt;</span> Kryštof Sentenský
+            </a>
+
+            <!-- Čistě CSS mobilní menu (checkbox hack bez JS) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Přepnout menu">
+            <label for="nav-toggle" class="menu-toggle" aria-label="Otevřít menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Odkazy navigace -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Úvod</a></li>
+                <li><a href="projekty.html" class="nav-link">Moje projekty</a></li>
+                <li><a href="o-mne.html" class="nav-link active">O mně</a></li>
+                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HLAVNÍ OBSAH: O MNĚ -->
+    <main class="main-wrapper page-content">
+        <section class="container">
+            
+            <!-- HORNÍ LIŠTA: Zpět na úvod -->
+            <div class="section-topbar">
+                <a href="index.html" class="btn-back">
+                    <span>←</span> Zpět na úvod
+                </a>
+            </div>
+
+            <!-- HLAVIČKA SEKCE -->
+            <div class="section-header">
+                <h1 class="section-title">O <span class="text-gradient">Mně</span></h1>
+                <p class="section-desc">Představení mých dosavadních zkušeností, přístupu ke kódování a používaných technologií.</p>
+            </div>
+
+            <!-- MŘÍŽKA S INFORMACEMI -->
+            <div class="about-grid">
+                
+                <!-- KARTA S PROFILOVÝMI INFORMACEMI -->
+                <div class="about-card intro-card">
+                    <div class="about-avatar">KS</div>
+                    <h3>Kryštof Sentenský</h3>
+                    <p class="role-tag">Nadšenec do webového vývoje & Front-end kodér</p>
+                    <p>
+                        Ahoj! Jmenuji se <strong>Kryštof Sentenský</strong> a věnuji se tvorbě moderních webových stránek v <strong>HTML a CSS</strong>. Baví mě tvořit funkční a estetické weby, které spolehlivě běží na všech typech zařízení od mobilů po stolní počítače.
+                    </p>
+                    <p>
+                        Stále se učím nové technologie, postupy a trendy. Kladu velký důraz na přehledný, dobře strukturovaný kód, moderní tmavý design a stoprocentní responzivitu.
+                    </p>
+                </div>
+
+                <!-- KARTA S DOVEDNOSTMI -->
+                <div class="about-card skills-card">
+                    <h3>Dovednosti & Technologie</h3>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-badge">Pokročilý</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3 & Responzivita</span>
+                            <span class="skill-badge">Pokročilý</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Flexbox & CSS Grid</span>
+                            <span class="skill-badge">Pokročilý</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <span class="skill-badge">Základy</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Sémantický web</span>
+                            <span class="skill-badge">Pokročilý</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">UI / Dark Mode Design</span>
+                            <span class="skill-badge">Pokročilý</span>
+                        </div>
+                    </div>
+
+                    <div class="about-focus-box">
+                        <h4>🎯 Na co kladu důraz:</h4>
+                        <ul>
+                            <li>Čistý kód bez zbytečných a přebytečných závislostí</li>
+                            <li>Mobile-first přístup a bezchybné zobrazení na telefonech</li>
+                            <li>Příjemný kontrast a moderní tmavá estetika</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- PATIČKA -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Kryštof Sentenský. Všechna práva vyhrazena.</p>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Úvod</a>
+                <span>•</span>
+                <a href="projekty.html" class="footer-link">Projekty</a>
+                <span>•</span>
+                <a href="o-mne.html" class="footer-link">O mně</a>
+                <span>•</span>
+                <a href="kontakt.html" class="footer-link">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

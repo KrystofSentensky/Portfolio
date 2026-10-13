@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osobní webové portfolio - Kryštof Sentenský. Tvorba čistých a responzivních webů bez JavaScriptu.">
+    <title>Kryštof Sentenský | Úvod</title>
+    <!-- Oddělené kaskádové styly -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing-body">
+
+    <!-- HLAVNÍ NAVIGAČNÍ LIŠTA -->
+    <header class="navbar-wrapper">
+        <nav class="navbar container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-accent">&lt;/&gt;</span> Kryštof Sentenský
+            </a>
+
+            <!-- Čistě CSS mobilní menu (checkbox hack bez JS) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Přepnout menu">
+            <label for="nav-toggle" class="menu-toggle" aria-label="Otevřít menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Odkazy navigace -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Úvod</a></li>
+                <li><a href="projekty.html" class="nav-link">Moje projekty</a></li>
+                <li><a href="o-mne.html" class="nav-link">O mně</a></li>
+                <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ČISTÁ ÚVODNÍ STRÁNKA (ŽÁDNÉ DLOUHÉ SJÍŽDĚNÍ DOLŮ) -->
+    <main class="main-wrapper hero-wrapper">
+        <section class="container hero-container">
+            <div class="hero-badge">
+                <span class="status-dot"></span> Dostupné pro nové projekty
+            </div>
+            
+            <h1 class="hero-title">
+                Ahoj, já jsem <span class="text-gradient">Kryštof Sentenský</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Tvořím moderní, čisté a plně responzivní webové stránky s důrazem na funkčnost, rychlost a přehledný kód.
+            </p>
+
+            <!-- JASNÉ PROKLIKY NA ZBYTEK OBSAHU WEBU -->
+            <div class="portal-grid">
+                <a href="projekty.html" class="portal-card">
+                    <div class="portal-icon">🚀</div>
+                    <div class="portal-info">
+                        <h3>Moje projekty</h3>
+                        <p>Prohlédněte si ukázky mé práce, webové stránky a realizované projekty.</p>
+                    </div>
+                    <span class="portal-arrow">→</span>
+                </a>
+
+                <a href="o-mne.html" class="portal-card">
+                    <div class="portal-icon">👨‍💻</div>
+                    <div class="portal-info">
+                        <h3>O mně & Dovednosti</h3>
+                        <p>Informace o mých zkušenostech, používaných technologiích a přístupu k vývoji.</p>
+                    </div>
+                    <span class="portal-arrow">→</span>
+                </a>
+
+                <a href="kontakt.html" class="portal-card">
+                    <div class="portal-icon">📬</div>
+                    <div class="portal-info">
+                        <h3>Kontaktujte mě</h3>
+                        <p>Napište mi zprávu nebo se spojte ohledně spolupráce či nového nápadu.</p>
+                    </div>
+                    <span class="portal-arrow">→</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- PATIČKA -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Kryštof Sentenský. Všechna práva vyhrazena.</p>
+            <div class="footer-links">
+                <a href="index.html" class="footer-link">Úvod</a>
+                <span>•</span>
+                <a href="projekty.html" class="footer-link">Projekty</a>
+                <span>•</span>
+                <a href="o-mne.html" class="footer-link">O mně</a>
+                <span>•</span>
+                <a href="kontakt.html" class="footer-link">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
